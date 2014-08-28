@@ -1,0 +1,10 @@
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\bin\Debug\Exhibitor.Mobile.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\bin\Debug\Exhibitor.Mobile.pdb
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\bin\Debug\Xamarin.Forms.Core.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\bin\Debug\Xamarin.Forms.Core.xml
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\obj\Debug\Exhibitor.Mobile.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\obj\Debug\Exhibitor.Mobile.pdb
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\obj\Debug\MainForm.xaml.g.cs
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile\obj\Debug\Exhibitor.Mobile.csprojResolveAssemblyReference.cache

@@ -1,0 +1,13 @@
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\obj\iPhoneSimulator\Debug\Exhibitor.Mobile.iOS.csprojResolveAssemblyReference.cache
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\FormsTemplateiOS.exe
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\FormsTemplateiOS.pdb
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Exhibitor.Mobile.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Exhibitor.Mobile.pdb
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Exhibitor.Mobile.dll.mdb
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.xml
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.xml
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\obj\iPhoneSimulator\Debug\FormsTemplateiOS.exe
+C:\Git\Exhibitor\Exhibitor.Mobile\Exhibitor.Mobile.iOS\obj\iPhoneSimulator\Debug\FormsTemplateiOS.pdb
