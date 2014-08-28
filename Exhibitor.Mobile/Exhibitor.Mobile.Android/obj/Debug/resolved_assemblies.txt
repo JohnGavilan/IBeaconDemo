@@ -1,10 +1,10 @@
-/Users/john/Documents/Projects/Exhibitor/Exhibitor.Mobile/Exhibitor.Mobile.Android/bin/Debug/Exhibitor.Mobile.Android.dll
-/Users/john/Documents/Projects/Exhibitor/Exhibitor.Mobile/Exhibitor.Mobile.Android/Android-iBeacon-Service.dll
-/Users/john/Documents/Projects/Exhibitor/packages/Xamarin.Android.Support.v4.19.0.2/lib/MonoAndroid10/Xamarin.Android.Support.v4.dll
-/Users/john/Documents/Projects/Exhibitor/packages/Xamarin.Forms.1.0.6186/lib/MonoAndroid10/Xamarin.Forms.Core.dll
-/Users/john/Documents/Projects/Exhibitor/packages/Xamarin.Forms.1.0.6186/lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll
-/Users/john/Documents/Projects/Exhibitor/packages/Xamarin.Forms.1.0.6186/lib/MonoAndroid10/Xamarin.Forms.Xaml.dll
-/Users/john/Documents/Projects/Exhibitor/Exhibitor.Mobile/Exhibitor.Mobile/bin/Debug/Exhibitor.Mobile.dll
+/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile.Android/bin/Debug/Exhibitor.Mobile.Android.dll
+/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile.Android/Android-iBeacon-Service.dll
+/Users/john/GitHub/IBeaconDemo.git/packages/Xamarin.Android.Support.v4.19.0.2/lib/MonoAndroid10/Xamarin.Android.Support.v4.dll
+/Users/john/GitHub/IBeaconDemo.git/packages/Xamarin.Forms.1.0.6186/lib/MonoAndroid10/Xamarin.Forms.Core.dll
+/Users/john/GitHub/IBeaconDemo.git/packages/Xamarin.Forms.1.0.6186/lib/MonoAndroid10/Xamarin.Forms.Platform.Android.dll
+/Users/john/GitHub/IBeaconDemo.git/packages/Xamarin.Forms.1.0.6186/lib/MonoAndroid10/Xamarin.Forms.Xaml.dll
+/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile/bin/Debug/Exhibitor.Mobile.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Collections.Concurrent.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.Collections.dll
 /Library/Frameworks/Mono.framework/External/xbuild-frameworks/MonoAndroid/v1.0/Facades/System.ComponentModel.Annotations.dll

@@ -10,6 +10,7 @@ namespace Exhibitor.Mobile
     {
         string StartListening(List<IBBeacon> Beacons);
         string StopListening();
+		string ResumeListening();
         void ServiceConnected();
 
         event IBBeaconDelegates.RegionEnteredHandler EnteredRegion;

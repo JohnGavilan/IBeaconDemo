@@ -19,8 +19,6 @@ namespace Exhibitor.Mobile.Droid.Classes
         public event IBBeaconDelegates.RegionExitedHandler ExitedRegion;
         public event IBBeaconDelegates.BeaconsInRangeHandler EnteredRange;
 
-        string UUID = "8DEEFBB9-F738-4297-8040-96668BB44281";
-        string BEACON_ID = "monkey1";
         IBeaconManager beaconMgr;
         List<NotifiersStruct> Notifiers = new List<NotifiersStruct>();
 
@@ -77,6 +75,16 @@ namespace Exhibitor.Mobile.Droid.Classes
             }
             return "Success";
         }
+
+		public string ResumeListening()
+		{
+			foreach (NotifiersStruct nr in Notifiers)
+			{ 
+				beaconMgr.StartMonitoringBeaconsInRegion(nr.monitoringRegion);
+				beaconMgr.StartMonitoringBeaconsInRegion(nr.rangingRegion);
+			}
+			return "Success";
+		}
 
         public void Bind(IBeaconConsumer ibeaconconsumer)
         {

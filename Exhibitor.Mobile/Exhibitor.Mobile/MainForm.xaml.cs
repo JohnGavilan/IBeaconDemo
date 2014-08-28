@@ -40,7 +40,7 @@ namespace Exhibitor.Mobile
 			foreach (IBBeacon beacon in e.Beacons) {
 				//update the proximity of the currentbeacon
 				if (currentbeacon.UniqueID == beacon.UniqueID) {
-					changed = currentbeacon.Proximity != beacon.Proximity;
+					//changed = currentbeacon.Proximity != beacon.Proximity;
 					currentbeacon.Proximity = beacon.Proximity;
 				} else {
 					if (beacon.Proximity < currentbeacon.Proximity || beacon.Proximity == 0) {
@@ -49,34 +49,71 @@ namespace Exhibitor.Mobile
 					}
 				}
 			}
-			string str = "<b>" + currentbeacon.ProximityUuid +
-				"</b> <br/> Proximity: " + currentbeacon.Proximity +
-				"<br/> Major: " + currentbeacon.Major +
-				"<br/> Minor: " + currentbeacon.Minor +
-				"<br/> ID: " + currentbeacon.BeaconId +
-				"<br/> Accuracy: " + currentbeacon.Accuracy;
 
 
-			Xamarin.Forms.Device.BeginInvokeOnMainThread (() => {
-				if (changed) {
-					HtmlWebViewSource wvc = new HtmlWebViewSource ();
-					wvc.Html = str;
-					MainWebView.Source = wvc;
+			#region Inline Data
+//			string str = "<b>" + currentbeacon.ProximityUuid +
+//				"</b> <br/> Proximity: " + currentbeacon.Proximity +
+//				"<br/> Major: " + currentbeacon.Major +
+//				"<br/> Minor: " + currentbeacon.Minor +
+//				"<br/> ID: " + currentbeacon.BeaconId +
+//				"<br/> Accuracy: " + currentbeacon.Accuracy;
+//
+//
+//			Xamarin.Forms.Device.BeginInvokeOnMainThread (() => {
+//				if (changed) {
+//					HtmlWebViewSource wvc = new HtmlWebViewSource ();
+//					wvc.Html = str;
+//					MainWebView.Source = wvc;
+//				}
+//
+//				StatusLabel.Text = str;
+//			});
+			#endregion
+
+			#region Sample Data
+			string str = "";
+
+			if(currentbeacon.ProximityUuid != null)
+			{
+				SampleData.Exhibit exhibit = SampleData.Exhibits.Find(o => 
+					currentbeacon.ProximityUuid.ToUpper().EndsWith(o.BeaconUUID.ToUpper()) &&
+					o.BeaconMajor == currentbeacon.Major &&
+					o.BeaconMinor == currentbeacon.Minor
+				);
+
+
+				if(exhibit == null)
+				{
+					str = "No Beacons In Range";
+					Xamarin.Forms.Device.BeginInvokeOnMainThread (() => {
+						StatusLabel.Text = str;
+					});
 				}
+				else
+				{
+					str = exhibit.Name + " - " + exhibit.Description;
+					Xamarin.Forms.Device.BeginInvokeOnMainThread (() => {
+						if (changed) {
+							UrlWebViewSource wvs = new UrlWebViewSource();
+							wvs.Url = exhibit.ExternalURL;
+							MainWebView.Source = wvs;
+						}
+						StatusLabel.Text = str;
+					});
+				}
+			}
+			#endregion
 
-				StatusLabel.Text = str;
-			});
 		}
 
         void ibeacon_EnteredRegion(object sender, IBMonitorEventArgs e)
         {
 			currentbeacon = new IBBeacon() {Proximity = 4};
-            //throw new NotImplementedException();
         }
 
         protected override void OnAppearing()
         {
-            btnStartListening.Text = "Start Listening";
 			MainWebView.VerticalOptions = LayoutOptions.FillAndExpand;
 			MainWebView.HorizontalOptions = LayoutOptions.FillAndExpand;
         }
@@ -86,11 +123,22 @@ namespace Exhibitor.Mobile
         {
             List<IBBeacon> beacons = new List<IBBeacon>();
 
-			beacons.Add(new IBBeacon() { ProximityUuid = "8DEEFBB9-F738-4297-8040-96668BB44281", BeaconId = "Beacon1", Major = 1, Minor = 5129 });
-			beacons.Add(new IBBeacon() { ProximityUuid = "8DEEFBB9-F738-4297-8040-96668BB44281", BeaconId = "Beacon2", Major = 1, Minor = 5098 });
-            beacons.Add(new IBBeacon() { ProximityUuid = "2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6", BeaconId = "USB Beacon" });
+			#region Inline Data
+//			beacons.Add(new IBBeacon() { ProximityUuid = "8DEEFBB9-F738-4297-8040-96668BB44281", BeaconId = "Beacon1", Major = 1, Minor = 5129 });
+//			beacons.Add(new IBBeacon() { ProximityUuid = "8DEEFBB9-F738-4297-8040-96668BB44281", BeaconId = "Beacon2", Major = 1, Minor = 5098 });
+//          beacons.Add(new IBBeacon() { ProximityUuid = "2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6", BeaconId = "USB Beacon" });
+			#endregion
 
-            //beacons.Add(new IBBeacon() { ProximityUuid = null, BeaconId = "beacons" });
+			#region Sample Data
+			foreach (SampleData.Exhibit exhibit in SampleData.Exhibits) {
+				beacons.Add (new IBBeacon () {
+					ProximityUuid = exhibit.BeaconUUID,
+					BeaconId = exhibit.Name,
+					Major = exhibit.BeaconMajor,
+					Minor = exhibit.BeaconMinor
+				});
+			}
+			#endregion
 
             ibeacon.StartListening(beacons);
         }

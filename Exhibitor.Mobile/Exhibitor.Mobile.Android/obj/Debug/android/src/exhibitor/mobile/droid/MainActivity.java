@@ -11,6 +11,8 @@ public class MainActivity
 	static {
 		__md_methods = 
 			"n_onCreate:(Landroid/os/Bundle;)V:GetOnCreate_Landroid_os_Bundle_Handler\n" +
+			"n_onResume:()V:GetOnResumeHandler\n" +
+			"n_onStop:()V:GetOnStopHandler\n" +
 			"n_getApplicationContext:()Landroid/content/Context;:GetGetApplicationContextHandler:RadiusNetworks.IBeaconAndroid.IBeaconConsumerInvoker, Android-iBeacon-Service\n" +
 			"n_bindService:(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z:GetBindService_Landroid_content_Intent_Landroid_content_ServiceConnection_IHandler:RadiusNetworks.IBeaconAndroid.IBeaconConsumerInvoker, Android-iBeacon-Service\n" +
 			"n_onIBeaconServiceConnect:()V:GetOnIBeaconServiceConnectHandler:RadiusNetworks.IBeaconAndroid.IBeaconConsumerInvoker, Android-iBeacon-Service\n" +
@@ -34,6 +36,22 @@ public class MainActivity
 	}
 
 	private native void n_onCreate (android.os.Bundle p0);
+
+
+	public void onResume ()
+	{
+		n_onResume ();
+	}
+
+	private native void n_onResume ();
+
+
+	public void onStop ()
+	{
+		n_onStop ();
+	}
+
+	private native void n_onStop ();
 
 
 	public android.content.Context getApplicationContext ()

@@ -1,1 +1,28 @@
-﻿<Properties GitUserInfo="UsingGIT" />
+﻿<Properties GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Exhibitor.Mobile/Exhibitor.Mobile/obj/Debug/MainForm.xaml.g.cs">
+    <Files>
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile/App.cs" Line="1" Column="1" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile/MainForm.xaml" Line="37" Column="37" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile/MainForm.xaml.cs" Line="1" Column="1" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile.Android/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile.Android/Classes/iBeacon.cs" Line="3" Column="3" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile/SampleData.cs" Line="30" Column="30" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile/ServiceLocator.cs" Line="1" Column="1" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile.iOS/Classes/iBeacon.cs" Line="1" Column="1" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile.iOS/AppDelegate.cs" Line="91" Column="91" />
+      <File FileName="Exhibitor.Mobile/Exhibitor.Mobile/obj/Debug/MainForm.xaml.g.cs" Line="29" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile.Android/MainActivity.cs" line="45" column="1" />
+      <Breakpoint file="/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile.Android/MainActivity.cs" line="40" column="1" />
+      <Breakpoint file="/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile.iOS/AppDelegate.cs" line="48" column="1" />
+      <Breakpoint file="/Users/john/GitHub/IBeaconDemo.git/Exhibitor.Mobile/Exhibitor.Mobile.iOS/AppDelegate.cs" line="53" column="91" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../Documents/Projects/Exhibitor/Exhibitor.Mobile/Exhibitor.Mobile/MainForm.xaml.cs" line="38" offsetX="725" offsetY="555" expression="beacon" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+</Properties>

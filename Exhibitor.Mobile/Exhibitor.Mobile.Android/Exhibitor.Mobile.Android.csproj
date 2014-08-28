@@ -45,6 +45,7 @@
     </JavaMaximumHeapSize>
     <JavaOptions>
     </JavaOptions>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Android-iBeacon-Service">

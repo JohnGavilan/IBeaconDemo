@@ -42,5 +42,15 @@ namespace Exhibitor.Mobile.iOS
 
             return true;
         }
+
+		public override void DidEnterBackground (UIApplication application)
+		{
+			Exhibitor.Mobile.ServiceLocator.Current.GetService<IBBeaconIterface> ().StopListening ();
+		}
+
+		public override void WillEnterForeground (UIApplication application)
+		{
+			Exhibitor.Mobile.ServiceLocator.Current.GetService<IBBeaconIterface> ().ResumeListening ();
+		}
     }
 }

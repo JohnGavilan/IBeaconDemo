@@ -73,6 +73,17 @@ namespace Exhibitor.Mobile.iOS.Classes
             return "Success";
         }
 
+		public string ResumeListening()
+		{
+			foreach(CLBeaconRegion r in Regions)
+			{
+				locationMgr.StopMonitoring(r);
+				locationMgr.StopRangingBeacons(r);
+			}
+
+			return "Success";
+		}
+
         public string StopListening()
         {
             foreach(CLBeaconRegion r in Regions)

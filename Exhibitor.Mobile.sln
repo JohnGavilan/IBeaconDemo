@@ -163,7 +163,7 @@ Global
 		{EE7CF393-C6AF-4F87-AC26-F5B434FDD94F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Exhibitor.Mobile\Exhibitor.Mobile.Android\Exhibitor.Mobile.Android.csproj
+		StartupItem = Exhibitor.Mobile\Exhibitor.Mobile.iOS\Exhibitor.Mobile.iOS.csproj
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

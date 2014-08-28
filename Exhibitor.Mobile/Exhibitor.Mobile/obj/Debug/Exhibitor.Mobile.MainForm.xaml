@@ -4,12 +4,15 @@
 					   x:Class="Exhibitor.Mobile.MainForm">
   <StackLayout>
 	<Label Text="" VerticalOptions="Center" HorizontalOptions="Center" />
-
-  	<Button x:Name="btnStartListening" HorizontalOptions="Center" Text="Start Listening"></Button>
-  	<Button x:Name="btnStopListening" HorizontalOptions="Center" Text="Stop Listening"></Button>
-
-  	<Label Text="" x:Name="StatusLabel"  VerticalOptions="Center" HorizontalOptions="Center" />
-  	<WebView x:Name="MainWebView" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" ></WebView>
+  	<StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+		<StackLayout.Padding>20, 20, 10, 10</StackLayout.Padding>
+	  	<Button x:Name="btnStartListening" HorizontalOptions="Start" Text="Start Listening" VerticalOptions="Center"></Button>
+	  	<Button x:Name="btnStopListening" HorizontalOptions="EndAndExpand" Text="Stop Listening" VerticalOptions="Center"></Button>
+	</StackLayout>
+	<StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<Label Text="" x:Name="StatusLabel"  VerticalOptions="Center" HorizontalOptions="Center" />
+		<WebView x:Name="MainWebView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ></WebView>
+	</StackLayout>
 
   </StackLayout>
 </ContentPage>

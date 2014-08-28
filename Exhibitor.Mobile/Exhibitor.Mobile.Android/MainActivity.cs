@@ -37,7 +37,7 @@ namespace Exhibitor.Mobile.Droid
 			
 		protected override void OnResume ()
 		{
-			Exhibitor.Mobile.ServiceLocator.Current.GetService<IBBeaconIterface> ().StartListening ();
+			Exhibitor.Mobile.ServiceLocator.Current.GetService<IBBeaconIterface> ().ResumeListening ();
 			base.OnResume ();
 		}
 		protected override void OnStop ()
